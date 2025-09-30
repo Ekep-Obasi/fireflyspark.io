@@ -4,7 +4,7 @@ import Apple from "@/components/icons/Apple";
 import FireflySparkLogo from "@/components/icons/FireflySparkLogo";
 import Link from "next/link";
 
-export default function HeroPage() {
+export default function NotFoundPage() {
   return (
     <main
       className="min-h-screen 
@@ -21,29 +21,15 @@ export default function HeroPage() {
 
           {/* Headline aligned with phone top */}
           <h1 className="text-5xl font-bold text-gray-50 mt-10">
-            Where spontaneity, culture, and good vibes come together.
+            This page does not exist 
           </h1>
-
-          <p className="mt-4 text-lg text-gray-200 max-w-[650px]">
-            Find your people, create moments that feel real, and build genuine human
-            connections, one spark at a time.
-          </p>
 
           <div className="mt-10 flex gap-5 items-center">
             <Link
-              href="#"
+              href="/"
               className="px-5 py-3.5 rounded-xl bg-green-500 font-semibold text-black text-18/24 flex items-center gap-2"
             >
-              <Apple className="w-5 h-5 mb-1" />
-              Download
-            </Link>
-
-            <Link
-              href="#"
-              className="px-5 py-3 rounded-xl border border-gray-200 font-semibold text-gray-200 text-18/24 flex items-center gap-2"
-            >
-              <Android className="w-5 h-5 mb-1" />
-              Download
+                Go to the home page
             </Link>
 
           </div>
