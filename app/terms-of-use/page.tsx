@@ -30,13 +30,36 @@ export default function PPPage() {
                     <h1 className="text-5xl font-bold text-gray-50 ">
                         Terms of Service
                     </h1>
-                    <p className="text-lg text-gray-200 mt-10">
+                    <p className="text-lg text-gray-200 py-1 mt-10">
+                        <span className="font-semibold">
+                            Effective date:&nbsp;
+                        </span>
+                        October 7, 2025
+                    </p>
+                    <p className="text-lg text-gray-200 py-1">
+                        <span className="font-semibold">
+                            Company:&nbsp;
+                        </span>
+                        <span className="font-semibold">Gallop Innovations Inc. </span>(doing business as <span className="font-semibold">Firefly Spark</span>) (<span className="font-semibold">“Firefly Spark,” “we,”
+                            “us,” “our”</span>)
+                    </p>
+                    <p className="text-lg text-gray-200 py-1">
+                        <span className="font-semibold">
+                            Address:&nbsp;
+                        </span>
+                        24 Borrows Street, Thornhill, Ontario, L4J 2S4
+                    </p>
+                    <p className="text-lg text-gray-200 py-1">
+                        <span className="font-semibold">
+                            Contact (support & legal):&nbsp;
+                        </span>
+                        <ContactEmail />
+                    </p>
+
+                    <p className="text-lg text-gray-200 my-10 pb-10 border-b-1 border-gray-400">
                         By creating an account, using the app, or starting/joining a Spark (defined below), you agree to
                         these Terms and to our <PP />&nbsp;
                         If you do not agree, do not use Firefly Spark.
-                    </p>
-                    <p className="text-lg text-gray-200 my-10 pb-10 border-b-1 border-gray-400">
-                        If you have any questions or want to exercise any of your rights set out in this notice, please contact us at <ContactEmail />
                     </p>
                 </section>
 
@@ -631,7 +654,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20 mb-40">
+                <section className="mt-20">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Miscellaneous
                     </h1>
@@ -670,6 +693,88 @@ export default function PPPage() {
                             </span>
                             The parties have expressly requested and required that these Terms and all
                             related documents be drawn up in English.
+                        </li>
+                    </ul>
+
+                    <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+                </section>
+
+                <section className="mt-20 mb-40">
+                    <h1 className="text-4xl font-bold text-gray-50 ">
+                        Schedule A — Product Policy (deposits, attendance &
+                        labeling)
+                    </h1>
+
+                    <ul className="list-disc ml-6">
+                        <li className="text-lg text-gray-200 py-1">
+                            <span className="font-semibold">
+                                Deposit to start/join: &nbsp;
+                            </span>
+                            <span className="font-semibold">
+                                10 Lumins
+                            </span>
+                        </li>
+                        <li className="text-lg text-gray-200 py-1">
+                            <span className="font-semibold">
+                                Arrival confirmation: &nbsp;
+                            </span>
+                            Auto by device location at/near the venue. If location is off, open
+                            the app at the venue so we can confirm.
+                        </li>
+                        <li className="text-lg text-gray-200 py-1">
+                            <span className="font-semibold">
+                                Late & cancellation outcomes: &nbsp;
+                            </span>
+                            <ul className="list-disc ml-6">
+                                <li className="text-lg text-gray-200 py-1">
+                                    Cancel after join →
+                                    <span className="font-semibold">
+                                        &nbsp;-10
+                                    </span>
+                                </li>
+                                <li className="text-lg text-gray-200 py-1">
+                                    Arrive 15–30 min late →
+                                    <span className="font-semibold">
+                                        &nbsp;0
+                                    </span>
+                                </li>
+                                <li className="text-lg text-gray-200 py-1">
+                                    Arrive 0–15 min late →
+                                    <span className="font-semibold">
+                                        &nbsp;-5
+                                    </span>
+                                </li>
+                                <li className="text-lg text-gray-200 py-1">
+                                    Arrive 30+ min late or no arrival →
+                                    <span className="font-semibold">
+                                        &nbsp;-10
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className="text-lg text-gray-200 py-1">
+                            <span className="font-semibold">
+                                Group change:: &nbsp;
+                            </span>
+                            If below your original minimum but still <span className="font-semibold">≥3</span>, choose <span className="font-semibold">Stay</span> in or <span className="font-semibold">Leave free</span>
+                            (no reply by the stated time may auto-remove you without penalty)
+                        </li>
+                        <li className="text-lg text-gray-200 py-1">
+                            <span className="font-semibold">
+                                Duo confirm: &nbsp;
+                            </span>
+                            If exactly <span className="font-semibold">2</span> remain before start, both must confirm <span className="font-semibold">Go 1-on-1?</span> within the
+                            stated time; otherwise we cancel and refund.
+                        </li>
+                        <li className="text-lg text-gray-200 py-1">
+                            <span className="font-semibold">
+                                Labeling & attribution: &nbsp;
+                            </span>
+                            Sparks may appear to be started by users or by Firefly Spark.
+                            Firefly Spark may also post Sparks from accounts it operates <span className="font-semibold">with or without Firefly
+                                Spark attribution. Only</span> Sparks expressly labeled <span className="font-semibold">Official Firefly Spark Event</span> are
+                            organized by Firefly Spark and require acceptance of <span className="font-semibold">Official Event Terms & Waiver</span>.
+                            All other Sparks are curated listings and not organized or hosted by Firefly Spark.
                         </li>
                     </ul>
 
