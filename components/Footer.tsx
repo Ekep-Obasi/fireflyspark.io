@@ -24,7 +24,7 @@ export default function Footer() {
                     Privacy Policy
                 </Link>{" "}
                 |{" "}
-                <Link href="#" className="hover:text-white">
+                <Link href="/terms-of-use" className="hover:text-white">
                     Terms of Use
                 </Link>
             </div>
