@@ -6,15 +6,15 @@ export default function Footer() {
     return (
         <footer
             className="md:fixed bottom-0 left-0 w-full 
-             flex flex-col md:flex-row items-center justify-between 
+             flex flex-col md:flex-row items-start md:items-center justify-between
              border-t border-gray-500 
-             text-xs md:text-sm text-gray-300 
+             text-xs md:text-sm text-gray-500 
              p-3 md:p-4 
-             space-y-2 md:space-y-0"
+             space-y-4 mb-4 md:mb-0 md:space-y-0"
             style={{ backgroundColor: "var(--background)" }}
         >
             {/* Left: Copyright */}
-            <Link className="flex-1 text-center md:text-left truncate" href='/'>
+            <Link className="flex-1 text-center md:text-left truncate mt-2 md:mt-0" href='/'>
                 Copyright © 2025 Firefly Spark
             </Link>
 
@@ -33,10 +33,10 @@ export default function Footer() {
             <div className="flex-1 text-center md:text-right">
                 <div className="inline-flex items-center gap-3">
                     <a href="mailto:hello@fireflyspark.io">
-                        <Mailbox className="w-6 h-6 text-gray-400 hover:text-white transition-colors" />
+                        <Mailbox className="w-6 h-6 text-gray-500 hover:text-white transition-colors" />
                     </a>
                     <a href="https://www.instagram.com/firefly.spark/?igsh=MWRuMzh4d2w5cXQ0ZQ%3D%3D">
-                        <Insta className="w-6 h-6 text-gray-400 hover:text-white transition-colors" />
+                        <Insta className="w-6 h-6 text-gray-500 hover:text-white transition-colors" />
                     </a>
                 </div>
             </div>

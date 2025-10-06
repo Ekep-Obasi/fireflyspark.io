@@ -1,6 +1,10 @@
-export default function AppPreview() {
+type AppPreviewProps = {
+    className: string
+}
+
+export default function AppPreview({ className }: AppPreviewProps) {
     return (
-        <svg width="324" height="665" viewBox="0 0 324 665" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
+        <svg className={className} width="324" height="665" viewBox="0 0 324 665" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
             <rect width="324" height="665" rx="60" fill="url(#pattern0_1587_17367)" />
             <defs>
                 <pattern id="pattern0_1587_17367" patternContentUnits="objectBoundingBox" width="1" height="1">
