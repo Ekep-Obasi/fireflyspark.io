@@ -1,7 +1,7 @@
 import AppPreview from "@/components/AppPreview";
 import Android from "@/components/icons/Android";
 import Apple from "@/components/icons/Apple";
-import FireflySparkLogo from "@/components/icons/FireflySparkLogo";
+import FireflySparkLogo from "@/components/icons/FireflySparkIcon";
 import Link from "next/link";
 
 export default function NotFoundPage() {
@@ -21,7 +21,7 @@ export default function NotFoundPage() {
 
           {/* Headline aligned with phone top */}
           <h1 className="text-5xl font-bold text-gray-50 mt-10">
-            This page does not exist 
+            This page does not exist
           </h1>
 
           <div className="mt-10 flex gap-5 items-center">
@@ -29,7 +29,7 @@ export default function NotFoundPage() {
               href="/"
               className="px-5 py-3.5 rounded-xl bg-green-500 font-semibold text-black text-18/24 flex items-center gap-2"
             >
-                Go to the home page
+              Go to the home page
             </Link>
 
           </div>

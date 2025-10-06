@@ -6,7 +6,7 @@ const metadata: Metadata = {
   title: "Firefly Spark",
   description: "Where spontaneity, culture, and good vibes come together.",
   icons: {
-    icon: "/favicon.ico",              
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Firefly Spark",
@@ -15,7 +15,7 @@ const metadata: Metadata = {
     siteName: "Firefly Spark",
     images: [
       {
-        url: "/og-image.png", // your OG image (1200x630 recommended)
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Firefly Spark App",
@@ -39,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-dvh flex flex-col overflow-x-hidden"> 
         {children}
         <Footer />
       </body>

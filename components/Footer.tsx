@@ -5,12 +5,12 @@ import Insta from "./icons/Insta"
 export default function Footer() {
     return (
         <footer
-            className="md:fixed bottom-0 left-0 w-full 
+            className="mt-auto w-full 
              flex flex-col md:flex-row items-start md:items-center justify-between
              border-t border-gray-500 
              text-xs md:text-sm text-gray-500 
              p-3 md:p-4 
-             space-y-4 mb-4 md:mb-0 md:space-y-0"
+             space-y-4 md:space-y-0"  
             style={{ backgroundColor: "var(--background)" }}
         >
             {/* Left: Copyright */}
@@ -20,6 +20,10 @@ export default function Footer() {
 
             {/* Middle: Links */}
             <div className="flex-1 text-center truncate">
+                <Link href="/about" className="hover:text-white">
+                    About
+                </Link>{" "}
+                |{" "}
                 <Link href="/private-policy" className="hover:text-white">
                     Privacy Policy
                 </Link>{" "}

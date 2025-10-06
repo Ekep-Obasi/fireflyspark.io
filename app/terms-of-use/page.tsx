@@ -1,4 +1,5 @@
-import FireflySparkLogo from "@/components/icons/FireflySparkLogo";
+import FireflySparkLogo from "@/components/FireflySparkLogo";
+import ScrollTop from "@/components/ScrollTop";
 import Link from "next/link";
 
 function ContactEmail() {
@@ -22,11 +23,22 @@ function PP() {
 export default function PPPage() {
     return (
         <main
-            className="min-h-screen p-10" >
+            className="p-5 md:p-10 max-w-[1400px] mx-auto" >
             <div className="flex-col md:flex-row items-start gap-10 md:gap-[120px] md:m-[60px] lg:m-[80px] xl:m-[108px]">
-                <FireflySparkLogo className="w-[100px] h-[100px]" />
+                <ScrollTop />
 
-                <section className="mt-40">
+                <div className="w-full flex items-center justify-between">
+                    <FireflySparkLogo
+                        className=" "
+                        textClass="sm:hidden"
+                        iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px] -ml-1 md:-ml-4"
+                    />
+                    <div className="sm:hidden">
+                        menu
+                    </div>
+                </div>
+
+                <section className="mt-5 md:mt-20">
                     <h1 className="text-5xl font-bold text-gray-50 ">
                         Terms of Service
                     </h1>
