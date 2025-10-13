@@ -1,4 +1,4 @@
-import FireflySparkLogo from "@/components/FireflySparkLogo";
+import FireflySparkLogo from "@/components/icons/FireflySparkLogo";
 import ScrollTop from "@/components/ScrollTop";
 import Link from "next/link";
 

@@ -1,7 +1,7 @@
 import AppPreview from "@/components/AppPreview";
 import Android from "@/components/icons/Android";
 import Apple from "@/components/icons/Apple";
-import FireflySparkLogo from "@/components/FireflySparkLogo";
+import FireflySparkLogo from "@/components/icons/FireflySparkLogo";
 import Link from "next/link";
 
 export default function HeroPage() {
@@ -25,7 +25,9 @@ export default function HeroPage() {
           </div>
 
           <h1 className="text-5xl font-bold text-gray-50 mt-10">
-            Free right now? Spontaneity you can count on.
+            Free right now?
+            <br />
+            Spontaneity you can count on.
           </h1>
 
           <p className="mt-4 text-lg text-gray-200 max-w-[650px]">
@@ -35,7 +37,7 @@ export default function HeroPage() {
           <div className="mt-10 flex gap-5 items-center justify-center md:justify-normal">
             <Link
               href="#"
-              className="px-5 py-3.5 rounded-xl bg-green-500 font-semibold text-black text-18/24 flex items-center gap-2"
+              className="px-5 py-3.5 rounded-xl bg-brand font-semibold text-[#03320D] text-18/24 flex items-center gap-2"
             >
               <Apple className="w-5 h-5 mb-1" />
               Download

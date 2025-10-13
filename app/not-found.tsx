@@ -37,7 +37,7 @@ export default function NotFoundPage() {
 
         {/* Phone column untouched */}
         <div className="mx-auto md:mx-0 shrink-0 w-[320px] relative overflow-hidden">
-          <AppPreview />
+          <AppPreview className=""/>
         </div>
       </div>
 

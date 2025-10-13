@@ -5,7 +5,6 @@
   font-family: "Clash Display";
   src: url("/fonts/ClashDisplay-Variable.ttf") format("truetype");
   font-weight: 200 500 700;
-  /* use 400 if single-weight */
   font-style: normal;
   font-display: swap;
 }
@@ -14,6 +13,11 @@
   --background: #1e1e1e;
   --foreground: #fff;
 }
+
+@theme {
+  --color-brand: #4EFF74; 
+}
+
 
 body {
   background: var(--background);
@@ -41,7 +45,6 @@ p {
   @media (min-width: 640px) {
     html {
       font-size: 16px;
-      /* sm breakpoint */
     }
   }
 
@@ -51,7 +54,4 @@ p {
     }
   }
 
-  p {
-    @apply text-sm sm:text-base md:text-lg leading-relaxed text-gray-200;
-  }
 }
