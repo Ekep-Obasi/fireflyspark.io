@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "Firefly Spark",
   description: "Where spontaneity, culture, and good vibes come together.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/firefly-logo.ico",
   },
   openGraph: {
     title: "Firefly Spark",
