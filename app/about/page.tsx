@@ -1,25 +1,29 @@
-import FireflySparkLogo from "@/components/icons/FireflySparkLogo";
+import FireflySparkLogo from "@/components/FireflySparkLogo";
 import ArrowRight from "@/components/icons/ArrowRight";
 import Link from "next/link";
+import Menu from "@/components/Menu";
 
 export default function AboutPage() {
     return (
-        <main className="relative bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)]">
+        <main
+            className="flex-1 overflow-hidden
+      bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)]
+      p-5 md:p-10"
+        >
+            <div className="flex flex-col md:flex-row items-start justify-center gap-10 md:gap-[120px] md:m-[60px] lg:m-[80px] xl:m-[108px]">
 
-            <div className="p-5 md:p-10 max-w-[1400px] mx-auto">
+                <div className="relative grow-0 basis-auto max-w-[750px] w-full pt-[120px] mx-auto md:mx-0 sm:mt-0 md:mt-5 lg:mt-20">
 
-                <div className="flex flex-col items-start gap-10 md:gap-[120px] md:m-[60px] lg:m-[80px] xl:m-[108px]">
-
-                    <div className="w-full flex items-center justify-between">
+                    <div className="absolute top-0 left-0 w-full flex items-center justify-between">
                         <FireflySparkLogo
                             className=""
                             textClass="sm:hidden"
-                            iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px] -ml-1 md:-ml-4"
+                            iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px]"
                         />
-                        <div className="sm:hidden">menu</div>
+                        <div className="sm:hidden"><Menu /></div>
                     </div>
 
-                    <section className="mt-5">
+                    <section>
                         <h1 className="text-5xl font-bold text-gray-50">About Us</h1>
 
                         <p className="text-lg text-gray-200 font-semibold mt-5 py-5 border-b border-gray-500">
@@ -37,14 +41,15 @@ export default function AboutPage() {
                         <Link
                             href="/waitlist"
                             className="inline-flex justify-center items-center gap-1 px-5 py-3.5 rounded-xl bg-brand font-semibold text-[#03320D] text-[18px] hover:bg-brand/90 transition-colors
-                            
-                            w-full md:w-auto mt-70 md:mt-10"
+              w-full md:w-auto md:mt-10 mt-50"
                         >
                             Be the first to know
                             <ArrowRight />
                         </Link>
                     </section>
                 </div>
+
+                <div className="hidden md:block shrink-0 w-[320px]" aria-hidden />
             </div>
         </main>
     );

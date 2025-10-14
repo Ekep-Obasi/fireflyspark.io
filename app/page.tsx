@@ -1,7 +1,7 @@
-import AppPreview from "@/components/AppPreview";
 import Android from "@/components/icons/Android";
 import Apple from "@/components/icons/Apple";
-import FireflySparkLogo from "@/components/icons/FireflySparkLogo";
+import FireflySparkLogo from "@/components/FireflySparkLogo";
+import Menu from "@/components/Menu";
 import Link from "next/link";
 
 export default function HeroPage() {
@@ -17,14 +17,14 @@ export default function HeroPage() {
             <FireflySparkLogo
               className=" "
               textClass="sm:hidden"
-              iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px] -ml-1 md:-ml-4"
+              iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px] "
             />
             <div className="sm:hidden">
-              menu
+              <Menu />
             </div>
           </div>
 
-          <h1 className="text-5xl font-bold text-gray-50 mt-10">
+          <h1 className="text-5xl font-bold text-gray-50 mt-5">
             Free right now?
             <br />
             Spontaneity you can count on.
@@ -36,7 +36,7 @@ export default function HeroPage() {
 
           <div className="mt-10 flex gap-5 items-center justify-center md:justify-normal">
             <Link
-              href="#"
+              href="/waitlist"
               className="px-5 py-3.5 rounded-xl bg-brand font-semibold text-[#03320D] text-18/24 flex items-center gap-2"
             >
               <Apple className="w-5 h-5 mb-1" />
@@ -44,7 +44,7 @@ export default function HeroPage() {
             </Link>
 
             <Link
-              href="#"
+              href="/waitlist"
               className="px-5 py-3 rounded-xl border border-gray-200 font-semibold text-gray-200 text-18/24 flex items-center gap-2"
             >
               <Android className="w-5 h-5 mb-1" />
@@ -59,7 +59,12 @@ export default function HeroPage() {
             <div className="w-[220px] h-[550px] rounded-full bg-green-500/30 blur-3xl " />
           </div>
 
-          <AppPreview className="relative z-10" />
+          <div className="mockup-phone border-black">
+            <div className="mockup-phone-camera"></div>
+            <div className="mockup-phone-display">
+              <img alt="wallpaper" src="/app-preview.png" />
+            </div>
+          </div>
         </div>
 
       </div>

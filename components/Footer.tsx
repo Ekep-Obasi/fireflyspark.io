@@ -10,15 +10,13 @@ export default function Footer() {
              border-t border-gray-500 
              text-xs md:text-sm text-gray-500 
              p-3 md:p-4 
-             space-y-4 md:space-y-0"  
+             space-y-4 md:space-y-0"
             style={{ backgroundColor: "var(--background)" }}
         >
-            {/* Left: Copyright */}
             <Link className="flex-1 text-center md:text-left truncate mt-2 md:mt-0" href='/'>
                 Copyright © 2025 Firefly Spark
             </Link>
 
-            {/* Middle: Links */}
             <div className="flex-1 text-center truncate">
                 <Link href="/about" className="hover:text-white">
                     About
@@ -33,7 +31,6 @@ export default function Footer() {
                 </Link>
             </div>
 
-            {/* Right: Icons */}
             <div className="flex-1 text-center md:text-right">
                 <div className="inline-flex items-center gap-3">
                     <a href="mailto:hello@fireflyspark.io">

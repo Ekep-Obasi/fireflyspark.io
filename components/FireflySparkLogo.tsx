@@ -20,9 +20,9 @@ export default function FireflySparkLogo({
         <Link href={'/'}>
             <span className={`inline-flex items-center align-middle ${fontSize} ${className ?? ""}`}>
                 <FireflySparkIcon className={iconClass ?? "w-[1em] h-[1em]"} />
-                <span className={`${textClass}`}>
+                {/* <span className={`${textClass}`}>
                     Firefly Spark
-                </span>
+                </span> */}
             </span>
         </Link>
     );
