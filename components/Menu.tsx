@@ -30,26 +30,27 @@ export default function Menu() {
       </button>
 
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out
-                    absolute right-0 mt-2 w-37 rounded-xl bg-[#222]/50 text-gray-100
-                    shadow-lg 
-                    ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`absolute right-0 mt-2 w-40 rounded-xl bg-[#222]/50 text-gray-100 shadow-lg
+              grid transition-all duration-300 ease-in-out
+              ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
       >
+        <div className="overflow-hidden">
 
-        <nav className="p-2 flex flex-col items-end">
-          <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/">
-            Home
-          </Link>
-          <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/about">
-            About
-          </Link>
-          <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/terms-of-use">
-            Terms
-          </Link>
-          <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/private-policy">
-            Private Policy
-          </Link>
-        </nav>
+          <nav className="p-2 flex flex-col items-end">
+            <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/">
+              Home
+            </Link>
+            <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/about">
+              About
+            </Link>
+            <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/terms-of-use">
+              Terms
+            </Link>
+            <Link className="block rounded-md px-3 py-2 hover:bg-white/5" href="/private-policy">
+              Private Policy
+            </Link>
+          </nav>
+        </div>
       </div>
     </div>
   );

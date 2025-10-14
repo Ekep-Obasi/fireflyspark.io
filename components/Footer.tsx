@@ -8,7 +8,7 @@ export default function Footer() {
             className="mt-auto w-full 
              flex flex-col md:flex-row items-start md:items-center justify-between
              border-t border-gray-500 
-             text-xs md:text-sm text-gray-500 
+             text-md md:text-sm text-gray-500 
              p-3 md:p-4 
              space-y-4 md:space-y-0"
             style={{ backgroundColor: "var(--background)" }}
