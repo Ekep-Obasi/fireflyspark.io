@@ -1,5 +1,4 @@
-import FireflySparkLogo from "@/components/FireflySparkLogo";
-import Menu from "@/components/Menu";
+import Header from "@/components/Header";
 import ScrollTop from "@/components/ScrollTop";
 import Link from "next/link";
 
@@ -27,19 +26,9 @@ export default function PPPage() {
             className="p-5 md:p-10 max-w-[1450px] mx-auto" >
             <div className="flex-col md:flex-row items-start lg:m-[80px] xl:m-[108px]">
                 <ScrollTop />
+                <Header />
 
-                <div className="w-full flex items-center justify-between">
-                    <FireflySparkLogo
-                        className=" "
-                        textClass="sm:hidden"
-                        iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px]"
-                    />
-                    <div className="sm:hidden">
-                        <Menu />
-                    </div>
-                </div>
-
-                <section>
+                <section className="md:mt-10" aria-label="terms-of-service">
                     <h1 className="text-5xl font-bold text-gray-50 ">
                         Terms of Service
                     </h1>
@@ -76,7 +65,7 @@ export default function PPPage() {
                     </p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-definitions">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Key definitions
                     </h1>
@@ -139,7 +128,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-who-may-use">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Who may use Firefly Spark
                     </h1>
@@ -169,7 +158,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-what-is-firefly-spark">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         What Firefly Spark is (and is not)
                     </h1>
@@ -188,7 +177,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-privacy">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Verification, privacy & location
                     </h1>
@@ -229,7 +218,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-sparks">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Creating, holding, joining & changing Sparks
                     </h1>
@@ -269,7 +258,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-lumins">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Lumins (deposits) & purchases
                     </h1>
@@ -325,7 +314,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-attendance">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Attendance, late & cancellations (deposits/penalties)
                     </h1>
@@ -367,7 +356,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-safety-rules">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Conduct & safety rules
                     </h1>
@@ -411,7 +400,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-license">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Your content; license; feedback
                     </h1>
@@ -452,7 +441,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-host">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         No organizer/host; no agency or special relationship
                     </h1>
@@ -470,7 +459,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-risks">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Assumption of risk & release
                     </h1>
@@ -500,7 +489,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-disclaimers">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Disclaimers (warranties)
                     </h1>
@@ -516,7 +505,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-liability">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Limitation of liability
                     </h1>
@@ -537,7 +526,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-indemnity">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Indemnity
                     </h1>
@@ -553,7 +542,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-changes">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Changes; suspension; termination; survival
                     </h1>
@@ -572,7 +561,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-third-party-services">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Third-party services & app stores
                     </h1>
@@ -588,7 +577,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-disputes">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Disputes; governing law; venue; time limits
                     </h1>
@@ -626,7 +615,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-casl">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Electronic communications; CASL
                     </h1>
@@ -640,7 +629,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-accessibility">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Accessibility & safety resources
                     </h1>
@@ -653,7 +642,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-rights-reporting">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Notice & takedown; rights reporting
                     </h1>
@@ -667,7 +656,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="terms-of-service-miscellaneous">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Miscellaneous
                     </h1>
@@ -712,7 +701,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20 mb-40">
+                <section className="mt-20 mb-40" aria-label="terms-of-service-schedule-a">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Schedule A — Product Policy (deposits, attendance &
                         labeling)

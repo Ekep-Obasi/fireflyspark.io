@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'flagpedia.net', // Replace with your image host domain
+        port: '',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

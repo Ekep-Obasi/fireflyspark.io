@@ -6,7 +6,7 @@ type FireflySparkLogoProps = {
     className?: string;
     iconClass?: string;
     fontSize?: string;
-    textClass?: string;
+    // textClass?: string;
     spacing?: string;
 };
 
@@ -14,7 +14,7 @@ export default function FireflySparkLogo({
     className,
     iconClass,
     fontSize = "text-xl",
-    textClass = ''
+    // textClass = ''
 }: FireflySparkLogoProps) {
     return (
         <Link href={'/'}>

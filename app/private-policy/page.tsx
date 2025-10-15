@@ -1,5 +1,4 @@
-import FireflySparkLogo from "@/components/FireflySparkLogo";
-import Menu from "@/components/Menu";
+import Header from "@/components/Header";
 import ScrollTop from "@/components/ScrollTop";
 
 function ContactEmail() {
@@ -17,19 +16,9 @@ export default function PPPage() {
             className="p-5 md:p-10 max-w-[1450px] mx-auto" >
             <div className="flex-col md:flex-row items-start lg:m-[80px] xl:m-[108px]">
                 <ScrollTop />
+                <Header />
 
-                <div className="w-full flex items-center justify-between">
-                    <FireflySparkLogo
-                        className=" "
-                        textClass="sm:hidden"
-                        iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px]"
-                    />
-                    <div className="sm:hidden">
-                        <Menu />
-                    </div>
-                </div>
-
-                <section>
+                <section className="md:mt-10" aria-label="private-policy">
                     <h1 className="text-5xl font-bold text-gray-50 ">
                         Private Policy
                     </h1>
@@ -41,7 +30,7 @@ export default function PPPage() {
                     </p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-collect">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         What we collect
                     </h1>
@@ -146,7 +135,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-id-verification">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Special note on selfie/ID verification (biometric data)
                     </h1>
@@ -198,7 +187,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-why-collect">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Why we collect it
                     </h1>
@@ -247,7 +236,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-do-not-sell-personal-info">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         We do not sell your personal information
                     </h1>
@@ -319,7 +308,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-keeping-information">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         How long we keep information
                     </h1>
@@ -355,7 +344,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-processing-data">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Where we store and process data (cross-border transfers)
                     </h1>
@@ -366,7 +355,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-security">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Security
                     </h1>
@@ -377,7 +366,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-canadian-law">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Your right under Canadian law
                     </h1>
@@ -420,7 +409,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-marketing-casl">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Marketing & CASL
                     </h1>
@@ -431,7 +420,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-children">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Children
                     </h1>
@@ -442,7 +431,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-decision-making">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Automated decision-making
                     </h1>
@@ -453,7 +442,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-third-party-services">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Third-pary links & services
                     </h1>
@@ -464,7 +453,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20">
+                <section className="mt-20" aria-label="private-policy-changes">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         Changes to this Policy
                     </h1>
@@ -475,7 +464,7 @@ export default function PPPage() {
                     <p className="text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
                 </section>
 
-                <section className="mt-20 mb-40">
+                <section className="mt-20 mb-40" aria-label="private-policy-contact">
                     <h1 className="text-4xl font-bold text-gray-50 ">
                         How to contact us
                     </h1>

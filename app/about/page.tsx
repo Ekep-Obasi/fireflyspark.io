@@ -1,7 +1,6 @@
-import FireflySparkLogo from "@/components/FireflySparkLogo";
 import ArrowRight from "@/components/icons/ArrowRight";
 import Link from "next/link";
-import Menu from "@/components/Menu";
+import Header from "@/components/Header";
 
 export default function AboutPage() {
     return (
@@ -12,18 +11,10 @@ export default function AboutPage() {
         >
             <div className="flex flex-col md:flex-row items-start justify-center gap-10 md:gap-[120px] md:m-[60px] lg:m-[80px] xl:m-[108px]">
 
-                <div className="relative grow-0 basis-auto max-w-[750px] w-full pt-[120px] mx-auto md:mx-0 sm:mt-0 md:mt-5 lg:mt-20">
+                <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0 sm:mt-0 md:mt-5 lg:mt-20">
+                    <Header />
 
-                    <div className="absolute top-0 left-0 w-full flex items-center justify-between">
-                        <FireflySparkLogo
-                            className=""
-                            textClass="sm:hidden"
-                            iconClass="w-[50px] h-[50px] md:w-[140px] md:h-[140px]"
-                        />
-                        <div className="sm:hidden"><Menu /></div>
-                    </div>
-
-                    <section>
+                    <section aria-label="about-firefly-spark">
                         <h1 className="text-5xl font-bold text-gray-50">About Us</h1>
 
                         <p className="text-lg text-gray-200 font-semibold mt-5 py-5 border-b border-gray-500">
