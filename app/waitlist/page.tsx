@@ -5,12 +5,13 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import { useState } from "react";
 import { faq } from '@/public/faq/index.js'
-import { type FAQProps } from "@/components/FAQ";
+import { type FAQItem } from "@/components/FAQ";
 import { AsYouType, parsePhoneNumberFromString } from 'libphonenumber-js/min';
 
 export default function WaitlistPage() {
     const [inputValue, setInputValue] = useState<string>('');
     const [error, setError] = useState<string>('');
+    const [isOpen, setIsOpen] = useState<number | null>(null);
 
     const defaultCountry = 'CA' as const;
 
@@ -88,7 +89,7 @@ export default function WaitlistPage() {
 
                             <button
                                 type="submit"
-                                className="w-full text-md rounded-xl bg-brand font-semibold text-[#03320D] text-[18px] px-5 py-3.5 hover:bg-brand/90 transition-colors"
+                                className="w-full text-sm md:text-md rounded-xl bg-brand font-semibold text-[#03320D] text-[18px] px-5 py-2 md:px-5 md:py-3.5 hover:bg-brand/90 transition-colors"
                             >
                                 Join Waitlist
                             </button>
@@ -108,8 +109,15 @@ export default function WaitlistPage() {
                         <h1 className="text-4xl font-bold text-gray-50">Frequently Asked Questions</h1>
 
                         <div className="mt-5 space-y-2">
-                            {faq.map((f: FAQProps, idx: number) => (
-                                <FAQ key={idx} question={f.question} answer={f.answer} points={f.points} />
+                            {faq.map((f: FAQItem, idx: number) => (
+                                <FAQ
+                                    key={idx}
+                                    question={f.question}
+                                    answer={f.answer}
+                                    points={f.points}
+                                    isOpen={isOpen === idx}
+                                    onToggle={() => setIsOpen(isOpen === idx ? null : idx)}
+                                />
                             ))}
                         </div>
                     </div>

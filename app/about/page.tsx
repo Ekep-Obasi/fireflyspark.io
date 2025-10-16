@@ -18,11 +18,11 @@ export default function AboutPage() {
                         <h1 className="text-5xl font-bold text-gray-50">About Us</h1>
 
                         <p className="text-lg text-gray-200 font-semibold mt-5 py-5 border-b border-gray-500">
-                            A member-only, privacy-first for spontaneous small meetups
+                            A members-only club for spontaneous meetups
                         </p>
 
                         <div className="mt-10 space-y-1.5">
-                            <p className="text-lg text-gray-200">No feed. No swiping. No DMs.</p>
+                            <p className="text-lg text-gray-200">No quizzes. No swiping. No AI.</p>
                             <p className="text-lg text-green-200">No public profiles.</p>
                             <p className="text-lg text-gray-200">Small groups. Public places.</p>
                             <p className="text-lg text-gray-200">Verified people. Plans that start soon.</p>
@@ -31,7 +31,7 @@ export default function AboutPage() {
 
                         <Link
                             href="/waitlist"
-                            className="inline-flex justify-center items-center gap-1 px-5 py-3.5 rounded-xl bg-brand font-semibold text-[#03320D] text-[18px] hover:bg-brand/90 transition-colors
+                            className="inline-flex justify-center items-center gap-1  px-5 py-2 md:px-5 md:py-3.5 rounded-xl bg-brand font-semibold text-[#03320D] text-[18px] hover:bg-brand/90 transition-colors
               w-full md:w-auto md:mt-10 mt-50"
                         >
                             Be the first to know

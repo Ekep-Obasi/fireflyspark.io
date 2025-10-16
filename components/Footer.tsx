@@ -17,7 +17,21 @@ export default function Footer() {
                 Copyright © 2025 Firefly Spark
             </Link>
 
-            <div className="flex-1 text-center truncate">
+            {/* Mobile layout */}
+            <div className="flex flex-col gap-2 items-start text-center truncate md:hidden">
+                <Link href="/about" className="hover:text-white">
+                    About
+                </Link>
+                <Link href="/private-policy" className="hover:text-white">
+                    Privacy Policy
+                </Link>
+                <Link href="/terms-of-use" className="hover:text-white">
+                    Terms of Use
+                </Link>
+            </div>
+
+            {/* Desktop layout */}
+            <div className="hidden md:block flex-1 text-center truncate">
                 <Link href="/about" className="hover:text-white">
                     About
                 </Link>{" "}
@@ -30,6 +44,7 @@ export default function Footer() {
                     Terms of Use
                 </Link>
             </div>
+
 
             <div className="flex-1 text-center md:text-right">
                 <div className="inline-flex items-center gap-3">
