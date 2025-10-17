@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Logs, TextAlignJustify } from 'lucide-react';
+import { X, TextAlignJustify } from 'lucide-react';
 import FireflySparkLogo from './FireflySparkLogo';
 
 export default function Header() {
@@ -26,7 +26,7 @@ export default function Header() {
                 >
                     {open
                         ?
-                        <Logs className="w-8 h-8" />
+                        <X className="w-8 h-8" />
                         :
                         <TextAlignJustify className="w-8 h-8" />
                     }

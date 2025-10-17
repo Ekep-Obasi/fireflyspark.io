@@ -1,22 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
-
-@font-face {
-  font-family: "Clash Display";
-  src: url("/fonts/ClashDisplay-Variable.ttf") format("truetype");
-  font-weight: 200 500 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   --background: #1e1e1e;
   --foreground: #fff;
+  display: 'swap'
 }
 
 @theme {
-  --color-brand: #4EFF74; 
+  --color-brand: #4EFF74;
 }
 
 body {
@@ -27,7 +19,7 @@ body {
 }
 
 h1 {
-  font-family: "Clash Display", ui-sans-serif, system-ui, -apple-system,
+  font-family: var(--font-clash), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, "Helvetica Neue", Arial;
   line-height: 57px;
   font-weight: 500;

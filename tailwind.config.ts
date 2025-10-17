@@ -18,6 +18,10 @@ const config: Config = {
           DEFAULT: '#4EFF74',
         },
       },
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'ui-sans-serif', 'system-ui'],
+        clash: ['var(--font-clash)', 'ui-sans-serif', 'system-ui'],
+      },
     },
   },
   plugins: [],

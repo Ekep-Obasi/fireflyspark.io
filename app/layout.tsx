@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import localFont from 'next/font/local'
+import { Poppins } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: "Firefly Spark",
@@ -32,14 +34,33 @@ export const metadata: Metadata = {
   },
 };
 
+const clashDisplay = localFont({
+  src: [
+    {
+      path: '../public/fonts/ClashDisplay-Variable.ttf', 
+      weight: '200 700', 
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-clash',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],        
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-poppins',
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="min-h-dvh flex flex-col overflow-x-hidden"> 
+    <html lang="en" className={`${clashDisplay.variable} ${poppins.variable}`}>
+      <body className="min-h-dvh flex flex-col overflow-x-hidden">
         {children}
         <Footer />
       </body>
