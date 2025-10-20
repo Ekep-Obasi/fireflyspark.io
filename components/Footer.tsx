@@ -22,7 +22,7 @@ export default function Footer() {
                 <Link href="/about" className="hover:text-white">
                     About
                 </Link>
-                <Link href="/private-policy" className="hover:text-white">
+                <Link href="/privacy-policy" className="hover:text-white">
                     Privacy Policy
                 </Link>
                 <Link href="/terms-of-use" className="hover:text-white">
@@ -36,7 +36,7 @@ export default function Footer() {
                     About
                 </Link>{" "}
                 |{" "}
-                <Link href="/private-policy" className="hover:text-white">
+                <Link href="/privacy-policy" className="hover:text-white">
                     Privacy Policy
                 </Link>{" "}
                 |{" "}

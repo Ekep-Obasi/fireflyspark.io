@@ -42,7 +42,7 @@ export default function Header() {
                     <Link href="/" className="block py-2 rounded hover:bg-white/10">Home</Link>
                     <Link href="/about" className="block py-2 rounded hover:bg-white/10">About</Link>
                     <Link href="/terms-of-use" className="block py-2 rounded hover:bg-white/10">Terms of Service</Link>
-                    <Link href="/private-policy" className="block py-2 rounded hover:bg-white/10">Private Policy</Link>
+                    <Link href="/privacy-policy" className="block py-2 rounded hover:bg-white/10">Private Policy</Link>
                 </nav>
             </div>
         </header>
