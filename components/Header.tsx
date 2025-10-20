@@ -2,11 +2,21 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 import { X, TextAlignJustify } from 'lucide-react';
 import FireflySparkLogo from './FireflySparkLogo';
 
 export default function Header() {
     const [open, setOpen] = useState(false);
+
+    const pathname = usePathname()
+
+    const links = [
+        { href: '/', label: 'Home' },
+        { href: '/about', label: 'About' },
+        { href: '/terms-of-use', label: 'Terms of Service' },
+        { href: '/privacy-policy', label: 'Privacy Policy' },
+    ]
 
     return (
         <header className="w-full text-gray-100">
@@ -38,12 +48,19 @@ export default function Header() {
                 className={`sm:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out
           ${open ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}
             >
-                <nav className="rounded-xlbackdrop-blur py-2 shadow">
-                    <Link href="/" className="block py-2 rounded hover:bg-white/10">Home</Link>
-                    <Link href="/about" className="block py-2 rounded hover:bg-white/10">About</Link>
-                    <Link href="/terms-of-use" className="block py-2 rounded hover:bg-white/10">Terms of Service</Link>
-                    <Link href="/privacy-policy" className="block py-2 rounded hover:bg-white/10">Private Policy</Link>
+                <nav className="rounded-xlbackdrop-blur py-3 shadow">
+                    {links.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={`block py-2 rounded hover:bg-white/10 ${pathname === link.href ? 'font-bold text-white' : 'text-gray-300'
+                                }`}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
                 </nav>
+                <hr className='text-gray-500' />
             </div>
         </header>
     );
