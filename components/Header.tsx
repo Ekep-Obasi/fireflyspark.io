@@ -25,7 +25,7 @@ export default function Header() {
         <FireflySparkLogo
           className=" "
           // textClass="sm:hidden"
-          iconClass="w-[48px] h-[48px] md:w-[100px] md:h-[100px]"
+          iconClass="w-12 h-12 md:w-[100px] md:h-[100px]"
         />
 
         <button
@@ -64,7 +64,6 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-         <hr className="border-gray-800" />
       </div>
     </header>
   );

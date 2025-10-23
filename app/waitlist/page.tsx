@@ -3,6 +3,8 @@
 import FAQ from "@/components/FAQ";
 import Header from "@/components/Header";
 import PhoneMockup from "@/components/PhoneMockup";
+import Toast from "@/components/Toast";
+import FadeIn from "@/components/FadeIn";
 import Image from "next/image";
 import { useState } from "react";
 import { faq } from '@/public/faq/index.js'
@@ -34,6 +36,7 @@ export default function WaitlistPage() {
     const [inputValue, setInputValue] = useState<string>('');
     const [error, setError] = useState<string>('');
     const [isOpen, setIsOpen] = useState<number | null>(null);
+    const [toast, setToast] = useState<string | null>(null);
 
     const defaultCountry = 'CA' as const;
 
@@ -61,20 +64,11 @@ export default function WaitlistPage() {
         submitToWaitlist(parsed.number)
             .then(() => {
                 setInputValue('');
-                
-                // Show success toast
-                const toast = document.createElement('div');
-                toast.className = 'toast toast-top toast-center';
-                toast.innerHTML = `
-                    <div class="alert alert-success">
-                        <span>Thank you! We'll be in touch soon.</span>
-                    </div>
-                `;
-                document.body.appendChild(toast);
-                setTimeout(() => toast.remove(), 3000);
+                setToast('Thank you! We\'ll be in touch soon.');
             })
             .catch((error) => {
                 setError('Failed to join waitlist. Please try again.');
+                setToast('Failed to join waitlist. Please try again.');
                 console.error('Waitlist submission error:', error);
             });
     };
@@ -85,18 +79,31 @@ export default function WaitlistPage() {
       bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)]
       pb-4 px-5 md:p-10"
         >
-            <div className="flex flex-col md:flex-row md:flex-wrap items-start justify-center gap-10 md:gap-[120px] m-0 md:m-[60px] lg:m-[80px] xl:m-[108px] py-3 md:py-0">
+            {toast && (
+                <Toast
+                    message={toast}
+                    onClose={() => setToast(null)}
+                />
+            )}
+            <div className="flex flex-col md:flex-row md:flex-wrap md:items-start items-center justify-center gap-10 md:gap-[120px] m-0 md:m-[60px] lg:m-[80px] xl:m-[108px] py-3 md:py-0">
 
                 <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0 sm:mt-0 md:mt-5 lg:mt-20">
-                    <Header />
+                    <FadeIn delay={0}>
+                      <Header />
+                    </FadeIn>
 
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-4 md:mt-6 text-center md:text-left">
+                    <FadeIn delay={0}>
+                    <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-16 md:mt-4 text-center md:text-left">
                         Be the first to know
                     </h1>
+                    </FadeIn>
+                    <FadeIn delay={150}>
                     <p className="mt-4 text-base md:text-lg text-gray-200 max-w-[650px] text-center md:text-left mx-auto md:mx-0">
                         Don&apos;t miss out — join the waitlist to unlock special launch perks...
                     </p>
+                    </FadeIn>
 
+                    <FadeIn delay={300}>
                     <form onSubmit={onSubmit} className="mt-10 w-full max-w-[380px] mx-auto md:mx-0 px-6 md:px-0">
                         <div className="flex flex-col md:flex-row gap-4 md:gap-0 w-full">
                             <div className="flex items-center gap-3 w-full rounded-xl md:rounded-l-xl md:rounded-r-none border border-[#999] bg-[#333] px-4 py-3 focus-within:border-brand focus-within:ring-0">
@@ -124,7 +131,7 @@ export default function WaitlistPage() {
                             </div>
                             <button
                                 type="submit"
-                                className="w-full md:w-auto text-base rounded-xl md:rounded-l-none md:rounded-r-xl bg-brand font-semibold text-[#03320D] px-3 py-3 hover:bg-brand/90 transition-colors whitespace-nowrap"
+                                className="w-full md:w-auto text-base rounded-xl md:rounded-l-none md:rounded-r-xl bg-brand font-semibold text-[#03320D] px-3 py-3 hover:bg-brand/90 transition-colors whitespace-nowrap cursor-pointer"
                             >
                                 Join Waitlist
                             </button>
@@ -134,9 +141,12 @@ export default function WaitlistPage() {
                             <p className="text-sm text-red-400 mt-2">{error}</p>
                         )}
                     </form>
+                    </FadeIn>
                 </div>
 
-                <PhoneMockup />
+                <FadeIn delay={400}>
+                  <PhoneMockup />
+                </FadeIn>
 
                 <section className="w-full md:basis-full relative mt-20 md:mt-40" aria-label="faq">
                     <div className="w-full md:max-w-[1190px] mx-auto">

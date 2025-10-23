@@ -2,13 +2,21 @@ export async function POST(request: Request) {
     try {
         const body = await request.json();
         
-        const response = await fetch('https://api.fireflyspark.ca/api/v1/waitlist', {
+        const response = await fetch('https://api.fireflyspark.ca/api/v1/waitlist/join', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(body),
         });
+
+        // Handle 409 Conflict - already registered
+        if (response.status === 409) {
+            return new Response(JSON.stringify({ success: true, message: 'This phone number was already registered.' }), {
+                status: 200,
+                headers: { 'Content-Type': 'application/json' },
+            });
+        }
 
         // Handle 204 No Content response
         if (response.status === 204) {

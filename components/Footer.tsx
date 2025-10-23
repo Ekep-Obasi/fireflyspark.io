@@ -1,9 +1,11 @@
 import Link from "next/link"
 import Mailbox from "./icons/Mailbox"
 import Insta from "./icons/Insta"
+import FadeIn from "./FadeIn"
 
 export default function Footer() {
     return (
+        <FadeIn delay={500}>
         <footer
             className="mt-auto w-full border-t border-gray-600 text-sm text-gray-300 p-5 md:p-6"
             style={{ backgroundColor: "var(--background)" }}
@@ -66,5 +68,6 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
+        </FadeIn>
     )
 }

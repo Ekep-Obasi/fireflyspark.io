@@ -42,7 +42,7 @@ p {
 
 @layer base {
   html {
-    font-size: 14px;
+    font-size: clamp(14px, 2vw, 18px);
   }
 
   @media (min-width: 640px) {
