@@ -48,7 +48,7 @@ export default function Header() {
         className={`sm:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out
           ${open ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}
       >
-         <nav className="rounded-lg backdrop-blur py-3 mb-4 shadow">
+        <nav className="rounded-lg backdrop-blur py-3 mb-4">
           {links.map((link) => (
             <Link
               key={link.href}

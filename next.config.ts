@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'flagpedia.net', // Replace with your image host domain
-        port: '',
+        protocol: "https",
+        hostname: "flagpedia.net", // Replace with your image host domain
+        port: "",
       },
     ],
   },

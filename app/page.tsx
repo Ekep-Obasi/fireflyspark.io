@@ -14,7 +14,6 @@ export default function HeroPage() {
     >
       <section aria-label="hero">
         <div className="flex flex-col md:flex-row md:flex-wrap md:items-start items-center justify-center gap-12 md:gap-[120px] m-0 md:m-[60px] lg:m-[80px] xl:m-[108px] py-3 md:py-0">
-
           <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0 mt-4 sm:mt-0 md:mt-5 lg:mt-20">
             <FadeIn delay={0}>
               <Header />
@@ -55,7 +54,6 @@ export default function HeroPage() {
                     Google Play
                   </Link>
                 </FadeIn>
-
               </div>
             </FadeIn>
           </div>
@@ -65,6 +63,6 @@ export default function HeroPage() {
           </FadeIn>
         </div>
       </section>
-    </main >
+    </main>
   );
 }
