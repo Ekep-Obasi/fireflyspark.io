@@ -5,54 +5,63 @@ import Insta from "./icons/Insta"
 export default function Footer() {
     return (
         <footer
-            className="mt-auto w-full 
-             flex flex-col md:flex-row items-start md:items-center justify-between
-             border-t border-gray-500 
-             text-md md:text-sm text-gray-500 
-             p-3 md:p-4 
-             space-y-4 md:space-y-0"
+            className="mt-auto w-full border-t border-gray-600 text-sm text-gray-300 p-5 md:p-6"
             style={{ backgroundColor: "var(--background)" }}
         >
-            <Link className="flex-1 text-center md:text-left truncate mt-2 md:mt-0" href='/'>
-                Copyright © 2025 Firefly Spark
-            </Link>
-
             {/* Mobile layout */}
-            <div className="flex flex-col gap-2 items-start text-center truncate md:hidden">
-                <Link href="/about" className="hover:text-white">
-                    About
-                </Link>
-                <Link href="/privacy-policy" className="hover:text-white">
-                    Privacy Policy
-                </Link>
-                <Link href="/terms-of-use" className="hover:text-white">
-                    Terms of Use
-                </Link>
+            <div className="flex flex-col md:hidden space-y-4">
+                <div className="flex flex-wrap gap-x-4 gap-y-2">
+                    <Link href="/about" className="hover:text-white transition-colors">
+                        About
+                    </Link>
+                    <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                        Privacy Policy
+                    </Link>
+                    <Link href="/terms-of-use" className="hover:text-white transition-colors">
+                        Terms of Use
+                    </Link>
+                </div>
+                <div className="flex items-center justify-between">
+                    <Link href='/' className="text-gray-300">
+                        © 2025 Firefly Spark
+                    </Link>
+                    <div className="flex items-center gap-4">
+                        <a href="mailto:hello@fireflyspark.io" aria-label="Email Firefly Spark">
+                            <Mailbox className="w-6 h-6 text-gray-300 hover:text-white transition-colors" />
+                        </a>
+                        <a href="https://www.instagram.com/firefly.spark/?igsh=MWRuMzh4d2w5cXQ0ZQ%3D%3D" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                            <Insta className="w-6 h-6 text-gray-300 hover:text-white transition-colors" />
+                        </a>
+                    </div>
+                </div>
             </div>
 
             {/* Desktop layout */}
-            <div className="hidden md:block flex-1 text-center truncate">
-                <Link href="/about" className="hover:text-white">
-                    About
-                </Link>{" "}
-                |{" "}
-                <Link href="/privacy-policy" className="hover:text-white">
-                    Privacy Policy
-                </Link>{" "}
-                |{" "}
-                <Link href="/terms-of-use" className="hover:text-white">
-                    Terms of Use
+            <div className="hidden md:flex items-center justify-between">
+                <Link href='/' className="text-gray-300">
+                    Copyright © 2025 Firefly Spark
                 </Link>
-            </div>
+                
+                <div className="flex items-center gap-3">
+                    <Link href="/about" className="hover:text-white transition-colors">
+                        About
+                    </Link>
+                    <span className="text-gray-500">|</span>
+                    <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                        Privacy Policy
+                    </Link>
+                    <span className="text-gray-500">|</span>
+                    <Link href="/terms-of-use" className="hover:text-white transition-colors">
+                        Terms of Use
+                    </Link>
+                </div>
 
-
-            <div className="flex-1 text-center md:text-right">
-                <div className="inline-flex items-center gap-3">
-                    <a href="mailto:hello@fireflyspark.io">
-                        <Mailbox className="w-6 h-6 text-gray-500 hover:text-white transition-colors" />
+                <div className="flex items-center gap-4">
+                    <a href="mailto:hello@fireflyspark.io" aria-label="Email Firefly Spark">
+                        <Mailbox className="w-6 h-6 text-gray-300 hover:text-white transition-colors" />
                     </a>
-                    <a href="https://www.instagram.com/firefly.spark/?igsh=MWRuMzh4d2w5cXQ0ZQ%3D%3D">
-                        <Insta className="w-6 h-6 text-gray-500 hover:text-white transition-colors" />
+                    <a href="https://www.instagram.com/firefly.spark/?igsh=MWRuMzh4d2w5cXQ0ZQ%3D%3D" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                        <Insta className="w-6 h-6 text-gray-300 hover:text-white transition-colors" />
                     </a>
                 </div>
             </div>

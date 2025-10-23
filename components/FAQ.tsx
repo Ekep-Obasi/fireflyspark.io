@@ -14,16 +14,16 @@ export type FAQProps = FAQItem & {
 
 export default function FAQ({ question, answer, points, isOpen, onToggle }: FAQProps) {
     return (
-        <div className="py-5 border-b border-gray-500">
+        <div className="py-5 border-b border-gray-600">
             <button
                 type="button"
                 onClick={onToggle}
                 aria-expanded={isOpen}
-                className="w-full flex justify-between items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/70 rounded-md"
+                className="w-full flex justify-between items-center gap-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/70 rounded-md p-2 -m-2"
             >
-                <p className="font-semibold text-white">{question}</p>
+                <p className="font-semibold text-base md:text-lg text-white">{question}</p>
                 <Plus
-                    className={`shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}
+                    className={`shrink-0 w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}
                 />
             </button>
 
@@ -32,9 +32,9 @@ export default function FAQ({ question, answer, points, isOpen, onToggle }: FAQP
                     }`}
             >
                 <div className="overflow-hidden">
-                    <p className="text-gray-300 leading-relaxed">{answer}</p>
+                    <p className="text-sm md:text-base text-gray-300 leading-relaxed">{answer}</p>
                     {points?.length ? (
-                        <ul className="mt-3 list-disc pl-5 space-y-1 text-gray-300">
+                        <ul className="mt-3 list-disc pl-5 space-y-1.5 text-sm md:text-base text-gray-300">
                             {points.map((p, idx) => <li key={idx}>{p}</li>)}
                         </ul>
                     ) : null}

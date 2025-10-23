@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { GoogleAnalytics } from "@/components/Analytics";
 import localFont from 'next/font/local'
 import { Poppins } from 'next/font/google'
 
@@ -61,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${clashDisplay.variable} ${poppins.variable}`}>
       <body className="min-h-dvh flex flex-col overflow-x-hidden">
+        <GoogleAnalytics />
         {children}
         <Footer />
       </body>
