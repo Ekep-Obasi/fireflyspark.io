@@ -28,7 +28,7 @@ export default function PPPage() {
                 <ScrollTop />
                 <Header />
 
-                <section className="mt-12 md:mt-6" aria-label="terms-of-service">
+                <section className="mt-4 md:mt-6" aria-label="terms-of-service">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-50">
                         Terms of Service
                     </h1>
@@ -42,8 +42,8 @@ export default function PPPage() {
                         <span className="font-semibold">
                             Company:&nbsp;
                         </span>
-                        <span className="font-semibold">Gallop Innovations Inc. </span>(doing business as <span className="font-semibold">Firefly Spark</span>) (<span className="font-semibold">"Firefly Spark," "we,"
-                            "us," "our"</span>)
+                        <span className="font-semibold">Gallop Innovations Inc. </span>(doing business as <span className="font-semibold">Firefly Spark</span>) (<span className="font-semibold">&quot;Firefly Spark,&quot; &quot;we,&quot;
+                            &quot;us,&quot; &quot;our&quot;</span>)
                     </p>
                     <p className="text-base md:text-lg text-gray-200 py-1">
                         <span className="font-semibold">

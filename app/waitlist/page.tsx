@@ -9,6 +9,27 @@ import { faq } from '@/public/faq/index.js'
 import { type FAQItem } from "@/components/FAQ";
 import { AsYouType, parsePhoneNumberFromString } from 'libphonenumber-js/min';
 
+const submitToWaitlist = async (phone: string) => {
+    try {
+        const response = await fetch('/api/waitlist', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ phone }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`API error: ${response.status}`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error('Failed to submit to waitlist:', error);
+        throw error;
+    }
+};
+
 export default function WaitlistPage() {
     const [inputValue, setInputValue] = useState<string>('');
     const [error, setError] = useState<string>('');
@@ -36,9 +57,26 @@ export default function WaitlistPage() {
             return;
         }
 
-        // const e164 = parsed.number;
-        // Submit to your API…
-        setInputValue('');
+        // Submit to API
+        submitToWaitlist(parsed.number)
+            .then(() => {
+                setInputValue('');
+                
+                // Show success toast
+                const toast = document.createElement('div');
+                toast.className = 'toast toast-top toast-center';
+                toast.innerHTML = `
+                    <div class="alert alert-success">
+                        <span>Thank you! We'll be in touch soon.</span>
+                    </div>
+                `;
+                document.body.appendChild(toast);
+                setTimeout(() => toast.remove(), 3000);
+            })
+            .catch((error) => {
+                setError('Failed to join waitlist. Please try again.');
+                console.error('Waitlist submission error:', error);
+            });
     };
 
     return (
@@ -47,12 +85,12 @@ export default function WaitlistPage() {
       bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)]
       pb-4 px-5 md:p-10"
         >
-            <div className="flex flex-col md:flex-row md:flex-wrap items-start justify-center gap-10 md:gap-[120px] md:m-[60px] lg:m-[80px] xl:m-[108px] py-8 md:py-0">
+            <div className="flex flex-col md:flex-row md:flex-wrap items-start justify-center gap-10 md:gap-[120px] m-0 md:m-[60px] lg:m-[80px] xl:m-[108px] py-3 md:py-0">
 
-                <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0">
+                <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0 sm:mt-0 md:mt-5 lg:mt-20">
                     <Header />
 
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-12 md:mt-6 text-center md:text-left">
+                    <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-4 md:mt-6 text-center md:text-left">
                         Be the first to know
                     </h1>
                     <p className="mt-4 text-base md:text-lg text-gray-200 max-w-[650px] text-center md:text-left mx-auto md:mx-0">

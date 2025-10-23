@@ -16,7 +16,7 @@ export default function PPPage() {
         <ScrollTop />
         <Header />
 
-        <section className="mt-12 md:mt-6" aria-label="private-policy">
+        <section className="mt-4 md:mt-6" aria-label="private-policy">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-50">
             Privacy Policy
           </h1>

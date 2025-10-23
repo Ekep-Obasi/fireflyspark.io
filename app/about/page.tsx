@@ -10,13 +10,13 @@ export default function AboutPage() {
             bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)]
             pb-4 px-5 md:p-10"
         >
-            <div className="flex flex-col md:flex-row items-start justify-center gap-10 md:gap-[120px] md:m-[60px] lg:m-[80px] xl:m-[108px] py-8 md:py-0">
+            <div className="flex flex-col md:flex-row items-start justify-center gap-10 md:gap-[120px] m-0 md:m-[60px] lg:m-[80px] xl:m-[108px] py-3 md:py-0">
 
-                <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0">
+                <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0 sm:mt-0 md:mt-5 lg:mt-20">
                     <Header />
 
                     <section aria-label="about-firefly-spark">
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-12 md:mt-6 text-center md:text-left">About Us</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-4 md:mt-6 text-center md:text-left">About Us</h1>
 
                         <p className="text-base md:text-lg text-gray-200 font-semibold mt-5 py-5 border-b border-gray-600 text-center md:text-left">
                             A members-only club for spontaneous meetups
