@@ -88,13 +88,12 @@ export default function WaitlistPage() {
 
           <FadeIn delay={0}>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-16 md:mt-4 text-center md:text-left">
-              Be the first to know
+              Secure Early Access
             </h1>
           </FadeIn>
           <FadeIn delay={150}>
             <p className="mt-4 text-base md:text-lg text-gray-200 max-w-[650px] text-center md:text-left mx-auto md:mx-0">
-              Don&apos;t miss out — join the waitlist to unlock special launch
-              perks...
+              Join the waitlist for launch notifications and bonus perks.
             </p>
           </FadeIn>
 
