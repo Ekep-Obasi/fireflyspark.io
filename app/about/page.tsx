@@ -27,7 +27,7 @@ export default function AboutPage() {
             <p className="text-base md:text-lg text-gray-200 font-semibold mt-5 py-5 border-b border-gray-600 text-center md:text-left">
               Firefly Spark is Toronto&apos;s members-only app for real,
               last-minute plans. In Firefly Spark you can run out of time but
-              never fun
+              never fun.
             </p>
 
             <div className="mt-10 space-y-2 text-center md:text-left">
