@@ -74,104 +74,110 @@ export default function WaitlistPage() {
   };
 
   return (
-    <main
-      className="flex-1 overflow-hidden
-      bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)]
-      pb-4 px-5 md:p-10"
-    >
+    <main className="flex-1 overflow-hidden bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)] px-6 py-8 md:px-10 md:py-10">
       {toast && <Toast message={toast} onClose={() => setToast(null)} />}
-      <div className="flex flex-col md:flex-row md:flex-wrap md:items-start items-center justify-center gap-10 md:gap-[120px] m-0 md:m-[60px] lg:m-[80px] xl:m-[108px] py-3 md:py-0">
-        <div className="relative grow-0 basis-auto max-w-[750px] w-full mx-auto md:mx-0 sm:mt-0 md:mt-5 lg:mt-20">
-          <FadeIn delay={0}>
-            <Header />
-          </FadeIn>
+      
+      <section aria-label="waitlist" className="min-h-[calc(100vh-280px)] flex items-center justify-center">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-20">
+            {/* Content Section */}
+            <div className="flex-1 w-full md:max-w-[600px] lg:max-w-[650px]">
+              <FadeIn delay={0}>
+                <Header />
+              </FadeIn>
+              
+              <FadeIn delay={0}>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-50 mt-12 md:mt-8 text-center md:text-left leading-tight">
+                  Secure Early Access
+                </h1>
+              </FadeIn>
+              
+              <FadeIn delay={150}>
+                <p className="mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 text-center md:text-left leading-relaxed">
+                  Join the waitlist for launch notifications and bonus perks.
+                </p>
+              </FadeIn>
 
-          <FadeIn delay={0}>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-50 mt-16 md:mt-4 text-center md:text-left">
-              Secure Early Access
-            </h1>
-          </FadeIn>
-          <FadeIn delay={150}>
-            <p className="mt-4 text-base md:text-lg text-gray-200 max-w-[650px] text-center md:text-left mx-auto md:mx-0">
-              Join the waitlist for launch notifications and bonus perks.
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={300}>
-            <form
-              onSubmit={onSubmit}
-              className="mt-10 w-full max-w-[380px] mx-auto md:mx-0 px-6 md:px-0"
-            >
-              <div className="flex flex-col md:flex-row gap-4 md:gap-0 w-full">
-                <div className="flex items-center gap-3 w-full rounded-xl md:rounded-l-xl md:rounded-r-none border border-[#999] bg-[#333] px-4 py-3 focus-within:border-brand focus-within:ring-0">
-                  <div className="relative w-6 h-6">
-                    <Image
-                      src="https://flagpedia.net/data/flags/w580/ca.webp"
-                      alt="Canada flag"
-                      fill
-                      className="rounded-full shrink-0"
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
-                  <input
-                    type="tel"
-                    inputMode="tel"
-                    autoComplete="tel"
-                    autoFocus
-                    value={inputValue}
-                    onChange={handleChange}
-                    placeholder="(204) 555-1234"
-                    className="flex-1 min-w-0 bg-transparent text-gray-100 placeholder:text-gray-400 focus:outline-none"
-                    aria-label="Phone number"
-                    aria-invalid={!!error}
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full md:w-auto text-base rounded-xl md:rounded-l-none md:rounded-r-xl bg-brand font-semibold text-[#03320D] px-3 py-3 hover:bg-brand/90 transition-colors whitespace-nowrap cursor-pointer"
+              <FadeIn delay={300}>
+                <form
+                  onSubmit={onSubmit}
+                  className="mt-8 sm:mt-10 md:mt-12 w-full max-w-[450px] mx-auto md:mx-0"
                 >
-                  Join Waitlist
-                </button>
-              </div>
+                  <div className="flex flex-col gap-3 w-full">
+                    <div className="flex items-center gap-3 w-full rounded-xl border border-[#999] bg-[#333] px-4 py-2.5 sm:py-3 focus-within:border-brand focus-within:ring-0">
+                      <div className="relative w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0">
+                        <Image
+                          src="https://flagpedia.net/data/flags/w580/ca.webp"
+                          alt="Canada flag"
+                          fill
+                          className="rounded-full"
+                          style={{ objectFit: "cover" }}
+                        />
+                      </div>
+                      <input
+                        type="tel"
+                        inputMode="tel"
+                        autoComplete="tel"
+                        value={inputValue}
+                        onChange={handleChange}
+                        placeholder="(204) 555-1234"
+                        className="flex-1 min-w-0 bg-transparent text-sm sm:text-base text-gray-100 placeholder:text-gray-400 focus:outline-none"
+                        aria-label="Phone number"
+                        aria-invalid={!!error}
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="w-full text-sm sm:text-base rounded-xl bg-brand font-semibold text-[#03320D] px-4 sm:px-5 py-2.5 sm:py-3 hover:bg-brand/90 transition-colors cursor-pointer"
+                    >
+                      Join Waitlist
+                    </button>
+                  </div>
 
-              {error && <p className="text-sm text-red-400 mt-2">{error}</p>}
-            </form>
-          </FadeIn>
-        </div>
-
-        <FadeIn delay={400}>
-          <PhoneMockup />
-        </FadeIn>
-
-        <section
-          className="w-full md:basis-full relative mt-20 md:mt-40"
-          aria-label="faq"
-        >
-          <div className="w-full md:max-w-[1190px] mx-auto">
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-x-0 top-0 -translate-y-10 mx-auto
-              w-[min(900px,100%)] h-[360px] rounded-full bg-brand/10 blur-[220px] -z-10"
-            />
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-50 text-center md:text-left">
-              Frequently Asked Questions
-            </h1>
-
-            <div className="mt-5 space-y-2">
-              {faq.map((f: FAQItem, idx: number) => (
-                <FAQ
-                  key={idx}
-                  question={f.question}
-                  answer={f.answer}
-                  points={f.points}
-                  isOpen={isOpen === idx}
-                  onToggle={() => setIsOpen(isOpen === idx ? null : idx)}
-                />
-              ))}
+                  {error && <p className="text-xs sm:text-sm text-red-400 mt-2">{error}</p>}
+                </form>
+              </FadeIn>
+            </div>
+            
+            {/* Phone Mockup Section */}
+            <div className="flex-shrink-0">
+              <FadeIn delay={400}>
+                <PhoneMockup />
+              </FadeIn>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section
+        className="w-full max-w-4xl mx-auto relative mt-20 md:mt-32 pb-10"
+        aria-label="faq"
+      >
+        <div className="w-full max-w-7xl mx-auto">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 top-0 -translate-y-10 mx-auto
+            w-[min(900px,100%)] h-[360px] rounded-full bg-brand/10 blur-[220px] -z-10"
+          />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-50 text-center md:text-left">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="mt-6 md:mt-8 space-y-2">
+            {faq.map((f: FAQItem, idx: number) => (
+              <FAQ
+                key={idx}
+                question={f.question}
+                answer={f.answer}
+                points={f.points}
+                isOpen={isOpen === idx}
+                onToggle={() => setIsOpen(isOpen === idx ? null : idx)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

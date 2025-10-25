@@ -6,7 +6,7 @@ export const faq = [
   {
     question: "How much is the membership?",
     answer:
-      "Early members get a lifetime price lock at $7.99. Limited spots available.",
+      "Early members get a lifetime price lock at $7.99/month. Limited spots available.",
   },
   {
     question: "What city will we launch in?",

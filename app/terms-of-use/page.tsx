@@ -29,11 +29,11 @@ export default function PPPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-50">
             Terms of Service
           </h1>
-          <p className="text-base md:text-lg text-gray-200 py-1 mt-10">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed mt-10">
             <span className="font-semibold">Effective date:&nbsp;</span>
             October 7, 2025
           </p>
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             <span className="font-semibold">Company:&nbsp;</span>
             <span className="font-semibold">Gallop Innovations Inc. </span>
             (doing business as{" "}
@@ -44,18 +44,14 @@ export default function PPPage() {
             </span>
             )
           </p>
-          <p className="text-base md:text-lg text-gray-200 py-1">
-            <span className="font-semibold">Address:&nbsp;</span>
-            24 Borrows Street, Thornhill, Ontario, L4J 2S4
-          </p>
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             <span className="font-semibold">
               Contact (support & legal):&nbsp;
             </span>
             <ContactEmail />
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 pb-10 border-b-1 border-gray-400">
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 pb-10 border-b-1 border-gray-400">
             By creating an account, using the app, or starting/joining a Spark
             (defined below), you agree to these Terms and to our <PP />
             &nbsp; If you do not agree, do not use Firefly Spark.
@@ -63,30 +59,30 @@ export default function PPPage() {
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-definitions">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Key definitions
           </h1>
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Spark:&nbsp;</span>a user-created
               plan for an in-person activity at a time/place chosen by users
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Hold / Hold my spot: &nbsp;</span>
               a conditional reservation that counts toward a Spark&apos;s
               minimum; you are not in the roster until the minimum is met.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Auto-join: &nbsp;</span>
               when a Hold converts to a confirmed seat because the Spark meets
               the minimum participants.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Lumins: &nbsp;</span>
               in-app points used as deposits; not money, have no cash value, and
               are not redeemable for cash.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">
                 Platform-Seeded Spark: &nbsp;
               </span>
@@ -101,7 +97,7 @@ export default function PPPage() {
               <span className="font-semibold">not</span> organized or supervised
               by Firefly Spark.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">
                 Official Firefly Spark Event: &nbsp;
               </span>
@@ -115,7 +111,7 @@ export default function PPPage() {
               Firefly Spark Event.
             </li>
           </ul>
-          <p className="text-base md:text-lg text-gray-200 py-1 mt-10">
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed py-2 mt-10">
             <span className="font-semibold">Important: &nbsp;</span>
             Whether or not a Spark appears to be started by Firefly Spark or by
             an account we operate,{" "}
@@ -126,26 +122,26 @@ export default function PPPage() {
             </span>
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-who-may-use">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Who may use Firefly Spark
           </h1>
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Age: &nbsp;</span>
               You must be <span className="font-semibold">18+</span> to use
               Firefly Spark. Activities marked{" "}
               <span className="font-semibold">19+</span> require that you are 19
               or older.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Territory: &nbsp;</span>
               We currently operate in Ontario (including the GTA/Toronto).
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Account: &nbsp;</span>
               Provide accurate information; keep credentials secure; you are
               responsible for all activity under your account. We may refuse,
@@ -154,17 +150,17 @@ export default function PPPage() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section
           className="mt-20"
           aria-label="terms-of-service-what-is-firefly-spark"
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             What Firefly Spark is (and is not)
           </h1>
-          <p className="text-base md:text-lg text-gray-200 py-1 mt-10">
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed py-2 mt-10">
             <span className="font-semibold"> Firefly Spark is a platform.</span>{" "}
             We help adults discover and coordinate small, same-day or near-term{" "}
             <span className="font-semibold">user-organized</span> activities. We{" "}
@@ -178,7 +174,7 @@ export default function PPPage() {
               You are solely responsible for your decisions and personal safety.
             </span>
           </p>
-          <p className="text-base md:text-lg text-gray-200 py-1 mt-10">
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed py-2 mt-10">
             If we ever run an{" "}
             <span className="font-semibold">Official Firefly Spark Event</span>,
             it will be <span className="font-semibold">clearly labeled</span>{" "}
@@ -188,15 +184,15 @@ export default function PPPage() {
             <span className="font-semibold">not</span> organized by Firefly
             Spark.
           </p>
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-privacy">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Verification, privacy & location
           </h1>
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Selfie/ID verification:</span>
               &nbsp; We may require a quick selfie check and, for certain
               features, an ID check provided by{" "}
@@ -205,7 +201,7 @@ export default function PPPage() {
               processing of images/biometric identifiers for verification, fraud
               prevention, and safety. See our <PP /> for details and retention.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">
                 Private by default; reveal window:
               </span>
@@ -215,7 +211,7 @@ export default function PPPage() {
               <span className="font-semibold">1 hour before</span> start;
               otherwise they are not visible to other users.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Location:</span>&nbsp; We use
               device location to (a) show nearby Sparks and (b){" "}
               <span className="font-semibold">
@@ -225,7 +221,7 @@ export default function PPPage() {
               location to other users. If location is off, open the app at the
               venue so attendance can be confirmed.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 leading-relaxed py-2">
               <span className="font-semibold">Emergencies:</span>&nbsp; Firefly
               Spark is <span className="font-semibold">not</span> an emergency
               service. In an emergency, call{" "}
@@ -233,15 +229,15 @@ export default function PPPage() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-sparks">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Creating, holding, joining & changing Sparks
           </h1>
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-   py-2 leading-relaxed">
               <span className="font-semibold">Hold my spot:</span>&nbsp; Tapping{" "}
               <span className="font-semibold">Hold</span> conditionally reserves
               a seat and counts toward the minimum. You are{" "}
@@ -251,7 +247,7 @@ export default function PPPage() {
               <span className="font-semibold">release</span> a Hold any time{" "}
               <span className="font-semibold">before</span> Auto-join.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Auto-join; leaving after join:
               </span>
@@ -259,7 +255,7 @@ export default function PPPage() {
               <span className="font-semibold">in</span>. If you leave after
               joining, penalties apply (§7).
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Group change (below your minimum):
               </span>
@@ -270,7 +266,7 @@ export default function PPPage() {
               don&apos;t respond by the stated time, we may auto-remove you
               without penalty.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Duo confirm (exactly 2):</span>
               &nbsp; If only two people remain before start, both must confirm{" "}
               <span className="font-semibold">Go 1-on-1?</span> within the
@@ -279,15 +275,15 @@ export default function PPPage() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-lumins">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Lumins (deposits) & purchases
           </h1>
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Nature of Lumins:</span>&nbsp;
               Lumins are in-app points used{" "}
               <span className="font-semibold">as deposits</span> to promote
@@ -303,12 +299,12 @@ export default function PPPage() {
               </span>{" "}
               prospectively.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Deposit:</span>&nbsp; Starting or
               joining a Spark requires a{" "}
               <span className="font-semibold">10 Lumin</span> deposit.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Purchases:</span>&nbsp; If you run
               out, you may <span className="font-semibold">purchase</span>{" "}
               Lumins via Apple/Google in-app purchase.{" "}
@@ -318,18 +314,18 @@ export default function PPPage() {
               except where platform policy or applicable law requires a refund.
               Taxes may apply. We may change prices prospectively.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">No transfer/resale:</span>&nbsp;
               You may not sell, barter, or transfer Lumins (except within
               features we explicitly enable).
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Account closure:</span>&nbsp; On
               account termination (by you or us), unused Lumins are{" "}
               <span className="font-semibold">forfeited</span>
               to the extent permitted by law.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Tickets/fees:</span>&nbsp; For{" "}
               <span className="font-semibold">Platform-Seeded Sparks</span>{" "}
               (including any{" "}
@@ -343,41 +339,41 @@ export default function PPPage() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-attendance">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Attendance, late & cancellations (deposits/penalties)
           </h1>
-          <p className="text-base md:text-lg text-gray-200 py-1 mt-10">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed mt-10">
             Attendance is auto-confirmed by device location near the venue
             at/after start. If location is disabled, open the app at the venue
             so we can confirm.
           </p>
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Cancel after you’ve joined (any time):
               </span>
               &nbsp;
               <span className="font-semibold">−10 Lumins</span> (deposit used).
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Arrive 0–15 minutes after start:
               </span>
               &nbsp;
               <span className="font-semibold">No penalty</span> (keep 10)
             </li>{" "}
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Arrive &gt;15–30 minutes after start:
               </span>
               &nbsp;
               <span className="font-semibold"> −5 Lumins</span> .
             </li>{" "}
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Arrive &gt;30 minutes after start or never arrive:
               </span>
@@ -387,66 +383,66 @@ export default function PPPage() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 mt-10">
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed mt-10">
             We may adjust deposit amounts and penalties prospectively with
             in-app notice. For Platform-Seeded listings (including
             house-posted), we do not guarantee venue capacity, entry, or
             availability; venue/provider rules apply.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-safety-rules">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Conduct & safety rules
           </h1>
-          <p className="text-base md:text-lg text-gray-200 py-1 mt-10">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed mt-10">
             You agree to:
           </p>
 
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Be lawful and respectful:</span>
               &nbsp; no harassment, hate, threats, stalking, doxxing, sexual
               exploitation, fraud, or illegal acts
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Follow venue rules & law</span>
               &nbsp; (including <span className="font-semibold">19+</span>{" "}
               alcohol rules).
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 No weapons, illegal drugs, or dangerous conduct.
               </span>
               &nbsp;
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Respect privacy:</span>&nbsp; do
               not record or post others&apos; likenesses without consent.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Use reports:</span>&nbsp; report
               issues via in-app tools or email <ContactEmail />.
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-license">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Your content; license; feedback
           </h1>
 
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Your rights:</span>&nbsp; You
               retain rights in content you submit (e.g., Spark titles/notes,
               messages, photos).
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">License to Firefly Spark:</span>
               &nbsp; You grant Firefly Spark a worldwide, non-exclusive,
               royalty-free license to host, store, reproduce, adapt, display,
@@ -454,27 +450,27 @@ export default function PPPage() {
               and to promote the service. To the extent permitted by law, you
               waive moral-rights enforcement against us for these purposes
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">No infringement:</span>&nbsp; You
               represent you have rights to your content and that it does not
               infringe others&apos; rights or law.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Feedback:</span>&nbsp; If you
               provide feedback, you grant us a perpetual, irrevocable,
               royalty-free license to use it without restriction or attribution.
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-host">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             No organizer/host; no agency or special relationship
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             For <span className="font-semibold">User-Started</span>,{" "}
             <span className="font-semibold">Platform-Seeded</span>, and{" "}
             <span className="font-semibold">unattributed house-posted</span>{" "}
@@ -492,16 +488,16 @@ export default function PPPage() {
             .
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-risks">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Assumption of risk & release
           </h1>
 
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Inherent risks:</span>&nbsp;
               Real-world activities involve risks (travel, weather, venue
               conditions, illness, crime, actions/omissions of others).{" "}
@@ -510,7 +506,7 @@ export default function PPPage() {
               </span>{" "}
               related to attending or hosting a Spark.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Release:</span>&nbsp; To the{" "}
               <span className="font-semibold">
                 maximum extent permitted by law
@@ -530,15 +526,15 @@ export default function PPPage() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-disclaimers">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Disclaimers (warranties)
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             To the{" "}
             <span className="font-semibold">
               maximum extent permitted by law,
@@ -554,15 +550,15 @@ export default function PPPage() {
             Map/location data may be inaccurate or incomplete.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-liability">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Limitation of liability
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             To the{" "}
             <span className="font-semibold">
               maximum extent permitted by law,
@@ -577,7 +573,7 @@ export default function PPPage() {
             , even if advised of the possibility.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             Our <span className="font-semibold">total aggregate liability</span>{" "}
             for all claims relating to the service is limited to the{" "}
             <span className="font-semibold">
@@ -588,15 +584,15 @@ export default function PPPage() {
             Ontario/Canadian law.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-indemnity">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Indemnity
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             You agree to{" "}
             <span className="font-semibold">
               defend, indemnify, and hold harmless
@@ -608,15 +604,15 @@ export default function PPPage() {
             Terms or law; or (d) your conduct at or in connection with a Spark.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-changes">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Changes; suspension; termination; survival
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             We may modify the service or these Terms{" "}
             <span className="font-semibold">prospectively</span> by posting
             in-app (the effective date will update). If you continue using the
@@ -625,23 +621,23 @@ export default function PPPage() {
             law, or for misuse.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             <span className="font-semibold">Survival:</span> §§6–7 and 9–21
             survive termination
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section
           className="mt-20"
           aria-label="terms-of-service-third-party-services"
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Third-party services & app stores
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             We rely on third parties (e.g., maps, payments, analytics,
             verification <span className="font-semibold">Biometric Vision</span>
             ). Their terms/privacy policies apply to their services; we are not
@@ -652,15 +648,15 @@ export default function PPPage() {
             beneficiaries of this clause.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-disputes">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Disputes; governing law; venue; time limits
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             These Terms are governed by the laws of{" "}
             <span className="font-semibold">Ontario</span> and the federal laws
             of <span className="font-semibold">Canada</span> applicable therein,
@@ -668,14 +664,14 @@ export default function PPPage() {
           </p>
 
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Venue:&nbsp;</span>
               You agree to the{" "}
               <span className="font-semibold">exclusive jurisdiction</span> of
               the courts of Ontario (Toronto) for disputes not resolved
               informally.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Optional arbitration:&nbsp;</span>
               If both parties agree in writing, a dispute may be referred to
               binding arbitration under the
@@ -684,7 +680,7 @@ export default function PPPage() {
               </span>{" "}
               in Toronto before a single arbitrator, in English.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Limitation period:&nbsp;</span>
               To the extent permitted by law, any claim must be filed within{" "}
               <span className="font-semibold">1 year</span>
@@ -692,15 +688,15 @@ export default function PPPage() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-casl">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Electronic communications; CASL
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             You consent to receive electronic communications related to your
             account and the service (e.g., invites, Auto-join, group changes,
             attendance outcomes). We send promotional messages only with consent
@@ -708,124 +704,124 @@ export default function PPPage() {
             can manage preferences in-app or by contacting <ContactEmail />
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-accessibility">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Accessibility & safety resources
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             If you require accessibility accommodations under the{" "}
             <span className="font-semibold">AODA</span>, contact{" "}
             <ContactEmail />. Use in-app tools to report safety concerns and
             block users.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section
           className="mt-20"
           aria-label="terms-of-service-rights-reporting"
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Notice & takedown; rights reporting
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 py-1">
+          <p className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
             For IP or legal notices, email <ContactEmail /> with enough detail
             to identify the content and your rights. We follow Canada&apos;s
             “notice-and-notice” approach and may remove or disable content at
             our discretion.
           </p>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section className="mt-20" aria-label="terms-of-service-miscellaneous">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Miscellaneous
           </h1>
 
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Entire agreement: &nbsp;</span>
               These Terms (plus the Privacy Policy and posted policies
               referenced here) are the entire agreement.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Severability: &nbsp;</span>
               If a provision is unenforceable, the rest remains in effect; an
               enforceable term will be substituted to approximate the original
               intent.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Assignment: &nbsp;</span>
               You may not assign these Terms. We may assign in connection with a
               merger, acquisition, or sale of assets.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">No waiver: &nbsp;</span>
               Failure to enforce a provision is not a waiver.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Language: &nbsp;</span>
               The parties have expressly requested and required that these Terms
               and all related documents be drawn up in English.
             </li>
           </ul>
 
-          <p className="text-base md:text-lg text-gray-200 my-10 border-b-1 border-gray-400"></p>
+          <p className="text-base md:text-lg text-gray-200 leading-relaxed my-10 border-b-1 border-gray-400"></p>
         </section>
 
         <section
           className="mt-20 mb-40"
           aria-label="terms-of-service-schedule-a"
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 ">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mt-8 mb-4 ">
             Schedule A — Product Policy (deposits, attendance & labeling)
           </h1>
 
           <ul className="list-disc ml-6">
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Deposit to start/join: &nbsp;
               </span>
               <span className="font-semibold">10 Lumins</span>
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Arrival confirmation: &nbsp;
               </span>
               Auto by device location at/near the venue. If location is off,
               open the app at the venue so we can confirm.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Late & cancellation outcomes: &nbsp;
               </span>
               <ul className="list-disc ml-6">
-                <li className="text-base md:text-lg text-gray-200 py-1">
+                <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
                   Cancel after join →
                   <span className="font-semibold">&nbsp;-10</span>
                 </li>
-                <li className="text-base md:text-lg text-gray-200 py-1">
+                <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
                   Arrive 15–30 min late →
                   <span className="font-semibold">&nbsp;0</span>
                 </li>
-                <li className="text-base md:text-lg text-gray-200 py-1">
+                <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
                   Arrive 0–15 min late →
                   <span className="font-semibold">&nbsp;-5</span>
                 </li>
-                <li className="text-base md:text-lg text-gray-200 py-1">
+                <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
                   Arrive 30+ min late or no arrival →
                   <span className="font-semibold">&nbsp;-10</span>
                 </li>
               </ul>
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Group change:: &nbsp;</span>
               If below your original minimum but still{" "}
               <span className="font-semibold">≥3</span>, choose{" "}
@@ -833,14 +829,14 @@ export default function PPPage() {
               <span className="font-semibold">Leave free</span>
               (no reply by the stated time may auto-remove you without penalty)
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">Duo confirm: &nbsp;</span>
               If exactly <span className="font-semibold">2</span> remain before
               start, both must confirm{" "}
               <span className="font-semibold">Go 1-on-1?</span> within the
               stated time; otherwise we cancel and refund.
             </li>
-            <li className="text-base md:text-lg text-gray-200 py-1">
+            <li className="text-base md:text-lg text-gray-200 py-2 leading-relaxed">
               <span className="font-semibold">
                 Labeling & attribution: &nbsp;
               </span>
