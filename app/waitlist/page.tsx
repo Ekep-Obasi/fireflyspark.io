@@ -87,13 +87,13 @@ export default function WaitlistPage() {
               </FadeIn>
               
               <FadeIn delay={0}>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-50 mt-12 md:mt-8 text-center md:text-left leading-tight">
+                <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-50 mt-12 md:mt-8 text-center md:text-left leading-tight">
                   Secure Early Access
                 </h1>
               </FadeIn>
               
               <FadeIn delay={150}>
-                <p className="mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 text-center md:text-left leading-relaxed">
+                <p className="mt-6 text-base sm:text-base md:text-lg lg:text-xl text-gray-200 text-center md:text-left leading-relaxed">
                   Join the waitlist for launch notifications and bonus perks.
                 </p>
               </FadeIn>
@@ -121,20 +121,20 @@ export default function WaitlistPage() {
                         value={inputValue}
                         onChange={handleChange}
                         placeholder="(204) 555-1234"
-                        className="flex-1 min-w-0 bg-transparent text-sm sm:text-base text-gray-100 placeholder:text-gray-400 focus:outline-none"
+                        className="flex-1 min-w-0 bg-transparent text-base sm:text-base text-gray-100 placeholder:text-gray-400 focus:outline-none"
                         aria-label="Phone number"
                         aria-invalid={!!error}
                       />
                     </div>
                     <button
                       type="submit"
-                      className="w-full text-sm sm:text-base rounded-xl bg-brand font-semibold text-[#03320D] px-4 sm:px-5 py-2.5 sm:py-3 hover:bg-brand/90 transition-colors cursor-pointer"
+                      className="w-full text-base sm:text-base rounded-xl bg-brand font-semibold text-[#03320D] px-4 sm:px-5 py-2.5 sm:py-3 hover:bg-brand/90 transition-colors cursor-pointer"
                     >
                       Join Waitlist
                     </button>
                   </div>
 
-                  {error && <p className="text-xs sm:text-sm text-red-400 mt-2">{error}</p>}
+                  {error && <p className="text-sm sm:text-sm text-red-400 mt-2">{error}</p>}
                 </form>
               </FadeIn>
             </div>
@@ -160,7 +160,7 @@ export default function WaitlistPage() {
             className="pointer-events-none absolute inset-x-0 top-0 -translate-y-10 mx-auto
             w-[min(900px,100%)] h-[360px] rounded-full bg-brand/10 blur-[220px] -z-10"
           />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-50 text-center md:text-left">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-50 text-center md:text-left">
             Frequently Asked Questions
           </h2>
 

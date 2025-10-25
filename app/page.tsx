@@ -18,7 +18,7 @@ export default function HeroPage() {
               </FadeIn>
               
               <FadeIn delay={0}>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-50 mt-12 md:mt-8 md:text-left leading-tight">
+                <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-50 mt-12 md:mt-8 text-center md:text-left leading-tight">
                   Free right now?
                   <br />
                   Spontaneity you can count on.
@@ -26,7 +26,7 @@ export default function HeroPage() {
               </FadeIn>
               
               <FadeIn delay={150}>
-                <p className="mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 md:text-left leading-relaxed">
+                <p className="mt-6 text-base sm:text-base md:text-lg lg:text-xl text-gray-200 text-center md:text-left leading-relaxed">
                   Plans that start soon. People who show up.
                 </p>
               </FadeIn>
@@ -35,7 +35,7 @@ export default function HeroPage() {
                 <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center justify-center md:justify-start">
                   <Link
                     href="/waitlist"
-                    className="px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-brand font-semibold text-[#03320D] text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer hover:opacity-90 transition-opacity"
+                    className="px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-brand font-semibold text-[#03320D] text-base sm:text-base flex items-center justify-center gap-2 cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <Apple className="w-4 h-4 sm:w-5 sm:h-5 mb-1" />
                     App Store
@@ -43,7 +43,7 @@ export default function HeroPage() {
                   
                   <Link
                     href="/waitlist"
-                    className="px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl border border-gray-200 font-semibold text-gray-200 text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-200 hover:text-[#03320D] transition-colors"
+                    className="px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl border border-gray-200 font-semibold text-gray-200 text-base sm:text-base flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-200 hover:text-[#03320D] transition-colors"
                   >
                     <Android className="w-4 h-4 sm:w-5 sm:h-5 mb-1" />
                     Google Play

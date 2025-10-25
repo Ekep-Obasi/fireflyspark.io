@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import ScrollTop from "@/components/ScrollTop";
+import FadeIn from "@/components/FadeIn";
 
 function ContactEmail() {
   return (
@@ -11,10 +12,12 @@ function ContactEmail() {
 
 export default function PPPage() {
   return (
-    <main className="pb-4 px-5 md:p-10 max-w-[1450px] mx-auto">
-      <div className="flex-col md:flex-row items-start lg:m-[80px] xl:m-[108px]">
+    <main className="flex-1 overflow-hidden bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)] px-6 py-8 md:px-10 md:py-10">
+      <div className="max-w-7xl mx-auto">
         <ScrollTop />
-        <Header />
+        <FadeIn delay={0}>
+          <Header />
+        </FadeIn>
 
         <section className="mt-4 md:mt-6" aria-label="private-policy">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-50">
