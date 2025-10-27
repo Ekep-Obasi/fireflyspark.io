@@ -7,14 +7,14 @@ import { Poppins } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Firefly Spark",
-  description: "Where spontaneity, culture, and good vibes come together.",
+  description: "Free right now? Spontaneity you can count on.",
   icons: {
     icon: "/firefly-logo.ico",
   },
   openGraph: {
     title: "Firefly Spark",
-    description: "Where spontaneity, culture, and good vibes come together.",
-    url: "https://fireflyspark.io",
+    description: "Free right now? Spontaneity you can count on.",
+    url: "https://fireflyspark.ca",
     siteName: "Firefly Spark",
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Firefly Spark",
-    description: "Where spontaneity, culture, and good vibes come together.",
+    description: "Free right now? Spontaneity you can count on.",
     images: ["/og-image.png"],
   },
 };

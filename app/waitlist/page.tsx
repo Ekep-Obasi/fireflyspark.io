@@ -76,8 +76,11 @@ export default function WaitlistPage() {
   return (
     <main className="flex-1 overflow-hidden bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.10)_0%,rgba(34,197,94,0.05)_25%,transparent_40%)] px-6 py-8 md:px-10 md:py-10">
       {toast && <Toast message={toast} onClose={() => setToast(null)} />}
-      
-      <section aria-label="waitlist" className="min-h-[calc(100vh-280px)] flex items-center justify-center">
+
+      <section
+        aria-label="waitlist"
+        className="min-h-[calc(100vh-280px)] flex items-center justify-center"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-20">
             {/* Content Section */}
@@ -85,13 +88,13 @@ export default function WaitlistPage() {
               <FadeIn delay={0}>
                 <Header />
               </FadeIn>
-              
+
               <FadeIn delay={0}>
                 <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-50 mt-12 md:mt-8 text-center md:text-left leading-tight">
                   Secure Early Access
                 </h1>
               </FadeIn>
-              
+
               <FadeIn delay={150}>
                 <p className="mt-6 text-base sm:text-base md:text-lg lg:text-xl text-gray-200 text-center md:text-left leading-relaxed">
                   Join the waitlist for launch notifications and bonus perks.
@@ -134,11 +137,15 @@ export default function WaitlistPage() {
                     </button>
                   </div>
 
-                  {error && <p className="text-sm sm:text-sm text-red-400 mt-2">{error}</p>}
+                  {error && (
+                    <p className="text-sm sm:text-sm text-red-400 mt-2">
+                      {error}
+                    </p>
+                  )}
                 </form>
               </FadeIn>
             </div>
-            
+
             {/* Phone Mockup Section */}
             <div className="flex-shrink-0">
               <FadeIn delay={400}>
