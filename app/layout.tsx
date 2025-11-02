@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import { GoogleAnalytics, FacebookPixel } from "@/components/Analytics";
+import {
+  GoogleAnalytics,
+  FacebookPixel,
+  RedditPixel,
+} from "@/components/Analytics";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 
@@ -61,9 +65,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${clashDisplay.variable} ${poppins.variable}`}>
-      <body className="min-h-dvh flex flex-col overflow-x-hidden">
+      <header>
         <GoogleAnalytics />
         <FacebookPixel />
+        <RedditPixel />
+      </header>
+      <body className="min-h-dvh flex flex-col overflow-x-hidden">
         {children}
         <Footer />
       </body>
