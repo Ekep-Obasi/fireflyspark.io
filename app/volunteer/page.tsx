@@ -3,8 +3,9 @@
 import Header from "@/components/Header";
 import Toast from "@/components/Toast";
 import FadeIn from "@/components/FadeIn";
+import Spinner from "@/components/Spinner";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { AsYouType, parsePhoneNumberFromString } from "libphonenumber-js/min";
 
@@ -73,7 +74,7 @@ const CITIES = {
 
 const CITY_KEYS = Object.keys(CITIES) as Array<keyof typeof CITIES>;
 
-export default function VolunteerPage() {
+function VolunteerForm() {
   const searchParams = useSearchParams();
   const inviteParam = searchParams.get("invite");
 
@@ -566,5 +567,25 @@ export default function VolunteerPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+export default function VolunteerPage() {
+  return (
+    <Suspense
+      fallback={
+        <main className="flex-1 overflow-hidden relative px-6 py-8 md:px-10 md:py-10">
+          {/* Animated background gradient */}
+          <div className="absolute inset-0 -z-10 overflow-hidden">
+            <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full bg-brand/10 blur-[200px] animate-move-gradient" />
+          </div>
+          <div className="min-h-[calc(100vh-280px)] flex items-center justify-center">
+            <Spinner />
+          </div>
+        </main>
+      }
+    >
+      <VolunteerForm />
+    </Suspense>
   );
 }
