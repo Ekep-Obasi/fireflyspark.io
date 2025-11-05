@@ -78,3 +78,27 @@ p {
     }
   }
 }
+
+@keyframes moveGradient {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translate(-50px, 50px) scale(1.1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(50px, -50px) scale(0.9);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translate(-30px, -30px) scale(1.05);
+    opacity: 0.35;
+  }
+}
+
+.animate-move-gradient {
+  animation: moveGradient 20s ease-in-out infinite;
+}
