@@ -87,6 +87,7 @@ function VolunteerForm() {
   const [customCity, setCustomCity] = useState<string>("");
   const [inviteCode, setInviteCode] = useState<string>("");
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
+  const dropdownButtonRef = useRef<HTMLButtonElement>(null);
   const [errors, setErrors] = useState<{
     name?: string;
     email?: string;
@@ -100,7 +101,7 @@ function VolunteerForm() {
 
   const defaultCountry = "CA" as const;
 
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside and calculate position
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -115,7 +116,7 @@ function VolunteerForm() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [isDropdownOpen]);
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setErrors((prev) => ({ ...prev, phone: undefined }));
@@ -269,7 +270,7 @@ function VolunteerForm() {
 
               <FadeIn delay={0}>
                 <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-50 mt-12 md:mt-8 text-left leading-tight">
-                  Be a Founding Volunteer
+                  Be Part of the Spark
                 </h1>
               </FadeIn>
 
@@ -284,7 +285,7 @@ function VolunteerForm() {
               <FadeIn delay={300}>
                 <form
                   onSubmit={onSubmit}
-                  className="mt-8 sm:mt-10 md:mt-12 w-full"
+                  className="mt-8 sm:mt-10 md:mt-12 w-full pb-8 md:pb-32"
                 >
                   <div className="flex flex-col gap-4 w-full">
                     {/* Name Input */}
@@ -423,9 +424,14 @@ function VolunteerForm() {
                       </label>
                       <div className="relative">
                         <button
+                          ref={dropdownButtonRef}
                           type="button"
                           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                          className="w-full rounded-xl border border-[#999] bg-[#333] px-4 py-2.5 sm:py-3 text-left text-base text-gray-100 focus:outline-none focus:border-brand flex items-center justify-between"
+                          className={`w-full rounded-xl border px-4 py-2.5 sm:py-3 text-left text-base text-gray-100 flex items-center justify-between transition-colors ${
+                            isDropdownOpen
+                              ? "border-brand bg-[#333] ring-2 ring-brand/30"
+                              : "border-[#999] bg-[#333] hover:border-brand/50 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30"
+                          }`}
                           aria-label="Select cities"
                           aria-expanded={isDropdownOpen}
                         >
@@ -496,7 +502,36 @@ function VolunteerForm() {
                           </svg>
                         </button>
                         {isDropdownOpen && (
-                          <div className="absolute z-10 w-full mt-2 rounded-xl border border-[#999] bg-[#333] shadow-lg max-h-60 overflow-y-auto">
+                          <div
+                            className="fixed z-[9999] rounded-xl border border-[#999] bg-[#333] shadow-lg max-h-60 overflow-y-auto"
+                            style={
+                              dropdownButtonRef.current
+                                ? (() => {
+                                    const rect =
+                                      dropdownButtonRef.current.getBoundingClientRect();
+                                    const spaceBelow =
+                                      window.innerHeight - rect.bottom;
+                                    const spaceAbove = rect.top;
+                                    const dropdownHeight = 240;
+                                    const shouldOpenUp =
+                                      spaceBelow < dropdownHeight &&
+                                      spaceAbove > spaceBelow;
+
+                                    return shouldOpenUp
+                                      ? {
+                                          bottom: `${window.innerHeight - rect.top + 8}px`,
+                                          left: `${rect.left}px`,
+                                          width: `${rect.width}px`,
+                                        }
+                                      : {
+                                          top: `${rect.bottom + 8}px`,
+                                          left: `${rect.left}px`,
+                                          width: `${rect.width}px`,
+                                        };
+                                  })()
+                                : {}
+                            }
+                          >
                             <div className="p-2">
                               {CITY_KEYS.map((cityKey) => (
                                 <button
